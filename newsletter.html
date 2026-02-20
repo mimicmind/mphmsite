@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter — YOUR NAME</title>
+  <meta name="description" content="Occasional notes on maritime markets, risk, and operations." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <strong>YOUR NAME</strong>
+        <span>Maritime consultancy</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="cv.html">CV</a>
+        <a href="work.html">Recent Work</a>
+        <a aria-current="page" href="newsletter.html">Newsletter</a>
+        <a class="button" href="mailto:YOUR@EMAIL.COM">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Newsletter</p>
+          <h1>Occasional notes on maritime decisions.</h1>
+          <p class="lead">
+            Short, decision-oriented writing: what changed, why it matters, and what to do about it.
+            Frequency: monthly or quarterly (pick one).
+          </p>
+          <div class="kicker">
+            <span class="pill">Markets</span>
+            <span class="pill">Operations</span>
+            <span class="pill">Risk</span>
+            <span class="pill">Contracts</span>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <h2>Subscribe</h2>
+
+          <!-- OPTION A: link out (simplest) -->
+          <p class="micro">If you use Substack/ConvertKit/etc, link it here:</p>
+          <p style="margin-top:10px;">
+            <a class="button" href="YOUR_NEWSLETTER_URL">Subscribe</a>
+          </p>
+
+          <!-- OPTION B: embed (replace with your provider's embed code) -->
+          <p class="micro" style="margin-top:14px;">
+            Or embed your signup form here (paste provider embed snippet).
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Recent posts</h2>
+        <p class="subhead">Add links once you’ve published a few.</p>
+
+        <div class="grid cols-3">
+          <div class="card">
+            <strong>Post title</strong>
+            <p class="micro">Month YYYY</p>
+            <p><a class="inline" href="POST_URL">Read →</a></p>
+          </div>
+          <div class="card">
+            <strong>Post title</strong>
+            <p class="micro">Month YYYY</p>
+            <p><a class="inline" href="POST_URL">Read →</a></p>
+          </div>
+          <div class="card">
+            <strong>Post title</strong>
+            <p class="micro">Month YYYY</p>
+            <p><a class="inline" href="POST_URL">Read →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="micro">© <span id="year"></span> YOUR NAME.</p>
+      <p class="micro"><a href="mailto:YOUR@EMAIL.COM" style="text-decoration:underline; text-decoration-color: rgba(255,255,255,0.18);">YOUR@EMAIL.COM</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
