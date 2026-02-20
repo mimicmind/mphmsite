@@ -129,20 +129,6 @@ h1{
 }
 .micro{ color: var(--faint); font-size: 14px; margin: 12px 0 0; }
 
-.hero-aside{
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: var(--r);
-  padding: 10px;
-  box-shadow: var(--shadow);
-}
-.hero-aside img{
-  display: block;
-  width: 100%;
-  border-radius: calc(var(--r) - 2px);
-  object-fit: cover;
-}
-
 .panel{
   background: linear-gradient(180deg, #ffffff, #fbfcff);
   border: 1px solid var(--line);
