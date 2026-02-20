@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recent Work — YOUR NAME</title>
+  <meta name="description" content="Selected recent work and case studies." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <strong>YOUR NAME</strong>
+        <span>Maritime consultancy</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="cv.html">CV</a>
+        <a aria-current="page" href="work.html">Recent Work</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a class="button" href="mailto:YOUR@EMAIL.COM">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Recent work</p>
+          <h1>Case studies, anonymised where necessary.</h1>
+          <p class="lead">
+            Replace these with 3–6 short write-ups. The format should be: problem → approach → result.
+            Even “NDA, but here’s the structure” is better than nothing.
+          </p>
+          <p class="micro">Tip: quantify impact (time saved, risk reduced, throughput improved), even if approximate.</p>
+        </div>
+
+        <aside class="panel">
+          <h2>Preferred format</h2>
+          <ul class="list">
+            <li><strong>Context:</strong> client type, scale, constraint</li>
+            <li><strong>Work:</strong> what you actually did</li>
+            <li><strong>Result:</strong> what changed</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="grid cols-3">
+          <div class="card">
+            <strong>Route / market decision under time pressure</strong>
+            <p class="micro">Client: OPERATOR TYPE · Date: Month YYYY</p>
+            <p>
+              Built a decision memo comparing options, with sensitivities around fuel, port constraints, and operational risk.
+              Outcome: DECISION + MEASURABLE IMPROVEMENT.
+            </p>
+          </div>
+
+          <div class="card">
+            <strong>Operational diagnosis and turnaround plan</strong>
+            <p class="micro">Client: PORT / FLEET / SERVICE PROVIDER · Date: Month YYYY</p>
+            <p>
+              Mapped processes, identified bottlenecks, and proposed a 30/60/90 plan with KPIs.
+              Outcome: REDUCTION IN DELAYS / COST / INCIDENTS.
+            </p>
+          </div>
+
+          <div class="card">
+            <strong>Diligence support for investment / acquisition</strong>
+            <p class="micro">Client: INVESTOR TYPE · Date: Month YYYY</p>
+            <p>
+              Ran commercial/operational diligence, red-flagged key issues, and produced an IC-ready memo.
+              Outcome: GO/NO-GO or price/risk terms renegotiated.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>NDA note:</strong> I can share additional detail under NDA if needed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="micro">© <span id="year"></span> YOUR NAME.</p>
+      <p class="micro"><a href="mailto:YOUR@EMAIL.COM" style="text-decoration:underline; text-decoration-color: rgba(255,255,255,0.18);">YOUR@EMAIL.COM</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
