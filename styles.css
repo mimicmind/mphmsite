@@ -258,7 +258,8 @@ h2{ margin: 0 0 10px; font-size: 30px; letter-spacing: -0.01em; font-weight: 600
   text-decoration-color: rgba(255,255,255,0.55);
 }
 
-.home .bg-map{
+.home .bg-map,
+.services-page .bg-map{
   position: fixed;
   inset: 0;
   z-index: 0;
@@ -275,7 +276,12 @@ h2{ margin: 0 0 10px; font-size: 30px; letter-spacing: -0.01em; font-weight: 600
   filter: saturate(0.54) contrast(1.03);
 }
 
-.home .bg-map::after{
+
+.services-page .bg-map{
+  background-image: url("assets/WhatsApp Image 2026-02-16 at 17.10.25.jpeg");
+}
+.home .bg-map::after,
+.services-page .bg-map::after{
   content:"";
   position: absolute;
   inset: 0;
@@ -285,4 +291,6 @@ h2{ margin: 0 0 10px; font-size: 30px; letter-spacing: -0.01em; font-weight: 600
 }
 
 .home main,
-.home .site-footer{ position: relative; z-index: 1; }
+.home .site-footer,
+.services-page main,
+.services-page .site-footer{ position: relative; z-index: 1; }
