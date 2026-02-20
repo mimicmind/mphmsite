@@ -254,3 +254,44 @@ h2{
   .two-col{ grid-template-columns: 1fr; }
   .nav a{ padding: 8px 8px; }
 }
+
+
+/* Home: hero panel with antique map texture */
+.home .map-panel{
+  background: transparent;           /* override the normal panel background */
+  position: relative;
+  overflow: hidden;
+}
+
+.home .map-panel::before{
+  content:"";
+  position:absolute;
+  inset:-12px;
+  background: url("assets/map-bg.webp") center/cover no-repeat;
+  opacity: 0.92;
+  transform: scale(1.05);
+}
+
+.home .map-panel::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  /* two overlays: a readable dark wash + a cool maritime glow */
+  background:
+    linear-gradient(180deg, rgba(7,16,24,0.35), rgba(7,16,24,0.88)),
+    radial-gradient(900px 500px at 15% 10%, rgba(123,212,255,0.16), transparent 55%);
+}
+
+.home .map-panel > *{
+  position: relative;
+  z-index: 1;
+}
+
+.home .map-panel .list{
+  color: rgba(255,255,255,0.78);
+}
+
+.home .map-panel .map-link{
+  text-decoration: underline;
+  text-decoration-color: rgba(123,212,255,0.35);
+}
