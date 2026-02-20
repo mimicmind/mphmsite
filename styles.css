@@ -295,3 +295,43 @@ h2{
   text-decoration: underline;
   text-decoration-color: rgba(123,212,255,0.35);
 }
+
+/* Home page: full-bleed antique map background */
+.home .bg-map{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  /* JPG fallback first, then modern browsers prefer image-set */
+  background-image: url("assets/map-hero.jpg");
+  background-image: image-set(
+    url("assets/map-hero.webp") type("image/webp"),
+    url("assets/map-hero.jpg") type("image/jpeg")
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.55;
+  filter: contrast(1.05) saturate(0.9);
+}
+
+/* Dark wash + subtle glow so text stays readable */
+.home .bg-map::after{
+  content:"";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 520px at 15% 10%, rgba(123,212,255,0.16), transparent 55%),
+    linear-gradient(180deg, rgba(5,10,16,0.20), rgba(5,10,16,0.88));
+}
+
+/* Ensure page content sits above the background layer */
+.home main,
+.home .site-footer{
+  position: relative;
+  z-index: 1;
+}
+
+/* Your header already has z-index: 50, so it will stay on top. */
