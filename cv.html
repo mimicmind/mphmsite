@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — YOUR NAME</title>
+  <meta name="description" content="CV and background." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <strong>YOUR NAME</strong>
+        <span>Maritime consultancy</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a aria-current="page" href="cv.html">CV</a>
+        <a href="work.html">Recent Work</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a class="button" href="mailto:YOUR@EMAIL.COM">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">CV</p>
+          <h1>Background and credentials.</h1>
+          <p class="lead">
+            Short summary of your profile: years in shipping/maritime, focus areas, and the kinds of decisions you’ve supported.
+          </p>
+          <div class="hero-cta">
+            <a class="button" href="assets/cv.pdf">Download PDF</a>
+            <a class="button ghost" href="mailto:YOUR@EMAIL.COM">Email</a>
+          </div>
+          <p class="micro">If you don’t have a PDF yet, remove the button or add one later.</p>
+        </div>
+
+        <aside class="panel">
+          <h2>At a glance</h2>
+          <ul class="list">
+            <li>Domain: SHIPPING / OFFSHORE / PORTS / INSURANCE (edit)</li>
+            <li>Strengths: ANALYSIS / NEGOTIATION / OPERATIONS / RISK (edit)</li>
+            <li>Tools: EXCEL / SQL / GIS / MODELLING (edit)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="item">
+              <header><strong>ROLE — COMPANY</strong><span>YYYY–YYYY</span></header>
+              <p>1–2 lines: what you owned, and what decisions you supported.</p>
+            </div>
+            <div class="item">
+              <header><strong>ROLE — COMPANY</strong><span>YYYY–YYYY</span></header>
+              <p>1–2 lines: the interesting part, ideally with outcomes or scope.</p>
+            </div>
+            <div class="item">
+              <header><strong>ROLE — COMPANY</strong><span>YYYY–YYYY</span></header>
+              <p>1–2 lines: focus area and scale (fleet size, budget, throughput, etc.).</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <h2>Education / certifications</h2>
+          <ul class="list">
+            <li>DEGREE — INSTITUTION (Year)</li>
+            <li>CERTIFICATION — BODY (Year)</li>
+            <li>Other: memberships, licenses, etc.</li>
+          </ul>
+
+          <h2 style="margin-top:16px;">Selected capabilities</h2>
+          <ul class="list">
+            <li>Commercial: chartering, contracts, procurement (edit)</li>
+            <li>Operational: performance, turnaround, KPIs (edit)</li>
+            <li>Risk: safety, compliance, incident analysis (edit)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="micro">© <span id="year"></span> YOUR NAME.</p>
+      <p class="micro"><a href="mailto:YOUR@EMAIL.COM" style="text-decoration:underline; text-decoration-color: rgba(255,255,255,0.18);">YOUR@EMAIL.COM</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
