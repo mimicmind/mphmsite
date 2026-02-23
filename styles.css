@@ -258,21 +258,31 @@ h2{ margin: 0 0 10px; font-size: 30px; letter-spacing: -0.01em; font-weight: 600
   text-decoration-color: rgba(255,255,255,0.55);
 }
 
-.home .bg-map{
+.home .bg-map,
+.services-page .bg-map{
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home .bg-map{
   background-image: url("assets/map-hero.jpg");
   background-image: image-set(
     url("assets/map-hero.webp") type("image/webp"),
     url("assets/map-hero.jpg") type("image/jpeg")
   );
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   opacity: 0.16;
   filter: saturate(0.54) contrast(1.03);
+}
+
+.services-page .bg-map{
+  background-image: url("assets/WhatsApp Image 2026-02-16 at 17.10.25.jpeg");
+  opacity: 0.28;
+  filter: saturate(0.78) contrast(1.04);
 }
 
 .home .bg-map::after{
@@ -284,5 +294,16 @@ h2{ margin: 0 0 10px; font-size: 30px; letter-spacing: -0.01em; font-weight: 600
     linear-gradient(180deg, rgba(250,251,255,0.20), rgba(245,246,251,0.86));
 }
 
+.services-page .bg-map::after{
+  content:"";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 520px at 15% 10%, rgba(13,27,61,0.08), transparent 58%),
+    linear-gradient(180deg, rgba(250,251,255,0.12), rgba(245,246,251,0.74));
+}
+
 .home main,
-.home .site-footer{ position: relative; z-index: 1; }
+.home .site-footer,
+.services-page main,
+.services-page .site-footer{ position: relative; z-index: 1; }
